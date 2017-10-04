@@ -16,13 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
                 inv <<- NULL
         }
         # the following adds a function to the matrix 'x'
-        # examples:
-        # creating 2 by 2 matrix 'x'
-        # x=matrix(1:2,2,2)
-        # temp=makeCacheMatrix(x) 
-        # temp$get()
-        ## to retrieve the matrix
-        # temp$getinv()
+        
         get = function() x
         setinv = function(inverse) inv <<- inverse 
         getinv = function() inv
